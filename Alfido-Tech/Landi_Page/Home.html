@@ -4,9 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-KyZXEAg3QhqLMpG8r+Knujsl5+z0CZhd0z9eTTtW8F0p1pjk6ZlF7Pgw91/fp2F0n2F8j5l2G7l3FgR1k8jRmA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link  rel="stylesheet" href="Style.css"/>
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
   <title>Alfido Tech Landing Page</title>
@@ -76,13 +74,8 @@
     </section>
    
    
-    <!-- New Section -->
-    <div>
-     
-        
-        
-    </div>
-
+    <!-- New Section for Contact -->
+  
     <div class="getIn" id="contact">
       <h2>GET IN TOUCH</h2>
       <div class="grid-second">
@@ -100,24 +93,20 @@
           <div class="content">
             <h4>Message Us</h4>
             <form>
-              
-              <input type="email" id="email" name="email" placeholder="Email" required>
+               <input type="email" id="email" name="email" placeholder="Email" required>
               <textarea id="message" name="message" rows="4" placeholder="Message"   required></textarea>
-          
-              <button type="submit">Submit</button>
+               <button type="submit">Submit</button>
             </form>
           </div>
         </div>
         <div class="grid-three">
           <div class="content">
             <div id="map"></div>
-            
-          </div>
+             </div>
         </div>
       </div>
     </div>
-   
-  </div>
+     </div>
 
   <footer>
     <div class="footer-links">
@@ -144,7 +133,6 @@
   var navList = document.querySelector('.nav');
   navList.classList.toggle('show');
       document.querySelector('.nav-toggle').classList.add('hidden');
-
 }
 function initMap() {
     // Specify the initial coordinates for the map
@@ -162,7 +150,6 @@ function initMap() {
       title: 'Addis Ababa, Ethiopia'
     });
   }
-  
   </script>
 </body>
 
