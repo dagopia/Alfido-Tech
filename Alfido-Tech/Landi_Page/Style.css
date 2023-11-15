@@ -146,7 +146,14 @@ background-size: cover;
     height: 70%;
     object-fit: cover;
   }
- 
+ .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: #fff;
+    
+ }
   .spa{
     display: flex;
     justify-content: center;
@@ -227,6 +234,7 @@ footer {
     color: #fff;
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
+    padding: 3px;
     
   }
   .sec{
@@ -240,6 +248,43 @@ footer {
  font-family: 'Times New Roman', Times, serif;
  font-weight: bold;
  opacity: 1;
+  }
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+  #map {
+    height: 300px;
+    width: 100%;
   }
 @media only screen and (max-width: 768px) {
     .nav {
@@ -387,4 +432,37 @@ footer {
   }
  
   }
+  /* Existing styles for grid */
+  .getIn{
+    width:90%;
+  }
+.grid-second {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 0 auto;
+  }
+  
+  .grid-one,
+  .grid-two,
+  .grid-three {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+ 
+  
+  /* Adjustments for smaller screens */
+  @media only screen and (max-width: 768px) {
+    .grid-second {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+    }
+    .grid-second {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+      margin: 0 auto;
+    }
+  }
+  
  

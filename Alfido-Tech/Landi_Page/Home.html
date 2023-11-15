@@ -8,7 +8,8 @@
   <link  rel="stylesheet" href="Style.css"/>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Alfido Tech Landing Page</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+  <title>Alfido Tech Landing Page</title>
 </head>
 
 <body>
@@ -82,23 +83,37 @@
         
     </div>
 
-    <div class="sec1" id="contact">
-      <div class="grid-container">
-        <div class="grid-item" id="itemOne">
-          <h2>We Explore Your Inner Shining Beauty<span>Wellcome to Dagopia SPA</span></h2>
-          <p>Dagopia Spa and Beauty Salon, built on the Weblium platform, is designed to showcase our services,
-            pricing, about us, team, portfolio, testimonials, products, and contacts. We invite you to explore the
-            specifics of doing business with an acclaimed agent in the beauty and personal care industry. Parallax
-            scrolling, a pastel color scheme, and soft-hued images match the softness of the website's shapes and
-            textures.</p>
-            <div>
-              <button class="button">Get Started</button>
-              <button class="button2">Contact Us</button>
-            </div>
+    <div class="getIn" id="contact">
+      <h2>GET IN TOUCH</h2>
+      <div class="grid-second">
+        <div class="grid-one">
+         
+          <div class="content">
+            <h4>Dagopia Beauty and Spa</h4>
+              <h3>Address:<span style="color: #065c3d;">Addis Ababa,Ethiopia</span></h3>
+               <h3>Email:<span style="color: #065c3d;">tdaguti@gmail.com</span></h3>
+              <h3>Phone:<span style="color: #065c3d;">+251933907735</span></h3>
+               </div>
         </div>
-        <div class="grid-item">
-          <img class="animated-image" src="https://s7d9.scene7.com/is/image/MandarinOriental/landmark-spa-the-oriental-spa-03?wid=1560&hei=820&fmt=jpeg&qlt=75,0&op_sharpen=0&resMode=sharp2&op_usm=0.8,0.8,4,0&iccEmbed=0&printRes=72&fit=crop&qlt=45,0"
-            alt="Animated Image">
+        <div class="grid-two">
+          <div class="content">
+            <h4>Message Us</h4>
+            <form>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+          
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+          
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="grid-three">
+          <div class="content">
+            <div id="map"></div>
+            
+          </div>
         </div>
       </div>
     </div>
@@ -123,6 +138,8 @@
 
     </div>
   </footer>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
   <script>
     function toggleNav() {
   var navList = document.querySelector('.nav');
@@ -130,6 +147,23 @@
       document.querySelector('.nav-toggle').classList.add('hidden');
 
 }
+function initMap() {
+    // Specify the initial coordinates for the map
+    var myLatLng = {lat: 9.1450, lng: 40.4897};
+  
+    // Create a map centered at the specified coordinates
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 13,
+      center: myLatLng
+    });
+      // Add a marker at the specified coordinates
+    var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      title: 'Addis Ababa, Ethiopia'
+    });
+  }
+  
   </script>
 </body>
 
