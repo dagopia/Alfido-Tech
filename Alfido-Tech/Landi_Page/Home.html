@@ -5,248 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-KyZXEAg3QhqLMpG8r+Knujsl5+z0CZhd0z9eTTtW8F0p1pjk6ZlF7Pgw91/fp2F0n2F8j5l2G7l3FgR1k8jRmA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+  <link  rel="stylesheet" href="Style.css"/>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Alfido Tech</title>
-
-  <style>
-    body {
-      background-image: url('https://img.pikbest.com/ai/illus_our/20230529/4a2f0fc0e2b15f8d942ead617aea5363.jpg!f305cw');
-      background-repeat: no-repeat;
-  background-position: center center; /* You can adjust the position */
-  background-size: cover;
-      margin: 0;
-      padding: 0;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    
-    }
-
-    nav {
-      background-color: rgba(255, 255, 255, 0.1);
-      overflow: hidden;
-      width:100%;
-      display: flex;
-      justify-content: right;
-      align-items:center;
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    li {
-      float: left;
-    }
-
-    li a {
-      display: block;
-      padding: 15px;
-      color:#088155;
-      text-decoration: none;
-      font-size: large;
-      font-weight: 700;
-    }
-
-    section {
-      padding: 5%;
-     
-      width: 90%;
-      background-color: rgba(255, 255, 255, 0.2);
-      border-radius: 17px;
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    h1 {
-      color: black;
-      font-size: 42px;
-      font-weight: 900;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      margin-bottom: 20px;
-    }
-    h2 {
-      color: #088155;
-      font-size: 48px;
-      font-weight: 700;
-      margin-bottom: 20px;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-
-    }
-
-    p {
-      color: white;
-      font-size: 18px;
-      
-      opacity: 0.7;
-    }
-
-    .button,
-    .button2 {
-      background-color: #088155;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 15px;
-      transition: background-color 0.3s ease;
-    }
-
-    .button2 {
-      background-color: #0d0e0e;
-    }
-
-    .button:hover,
-    .button2:hover {
-      background-color: #065c3d;
-      font-size: large;
-      font-weight: normal;
-    }
-
-    a:hover {
-      color:white;
-      text-decoration: underline;
-      font-size: large;
-      
-    }
-    /* New section styles */
-    .grid-container {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      grid-template-columns: repeat(2, 1fr);
-      margin-left: 15%;
-      margin-top: 30px;
-      width: 70%;
-    }
-
-    .grid-item {
-        margin-top: 30px;
-      border-radius: 10px;
-      overflow: hidden;
-      
-    }
-
-    .grid-item img {
-      width: 100%;
-      height: 70%;
-      object-fit: cover;
-    }
-    .Second-grid{
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      grid-template-columns: repeat(2, 1fr);
-     margin-left: 10%;
-      margin-top: 30px;
-      width: 100%;
-    }
-    .spa{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-      margin-top: 30px;
-      width: 100%;
-    }
-#itemOne{
- 
-  font-size: 28px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-    .animated-image {
-  width: 100%;
-  max-width: 100%;
-  min-width: 25%;
-  border-radius: 10px;
-  transition: transform 0.5s ease; /* Added transition property */
-}
-
-.animated-image:hover {
-  transform: rotate(360deg); /* Rotate the image on hover */
-}
-
-.animated-image:hover {
-  animation: rotateHover 15s linear infinite; /* Rotate the image on hover using animation */
-}
-
-@keyframes rotateHover {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .footer-links {
-      margin-top: 10px;
-    }
-
-    .footer-links a {
-      color:#088155;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-      opacity: 1;
-    }
-
-    .social-icons {
-      margin-top: 20px;
-    }
-
-    .social-icons a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 10px;
-      font-size: 20px;
-    }
-
-  </style>
+<title>Alfido Tech Landing Page</title>
 </head>
 
 <body>
   <div class="container">
-    
     <nav>
+      <div class="logo">
+        <a href="Home.html" class="spaLOgo">Dagopia</a>
+      </div>
+      <div class="nav-toggle" onclick="toggleNav()">&#9776; Menu</div>
       <ul class="nav">
-      <li>  <a href="#"><img src="https://cdn1.vectorstock.com/i/1000x1000/77/95/smile-logo-and-icon-vector-35297795.jpg"
-        width="40px" height="40px" alt="Logo"></a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="Products.html">Products</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+         <li><a href="Products.html">Products</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
     </nav>
 
-    <div class="sec1">
+    <div class="sec1" id="home">
       <div class="grid-container">
         <div class="grid-item" id="itemOne">
-          <h2>We Explore Your Inner Shining Beauty<span style="color: white;">Wellcome to Dagopia</span></h2>
+          <h2>We Explore Your Inner Shining Beauty<span>Wellcome to Dagopia SPA</span></h2>
           <p>Dagopia Spa and Beauty Salon, built on the Weblium platform, is designed to showcase our services,
             pricing, about us, team, portfolio, testimonials, products, and contacts. We invite you to explore the
             specifics of doing business with an acclaimed agent in the beauty and personal care industry. Parallax
@@ -258,7 +41,7 @@ footer {
             </div>
         </div>
         <div class="grid-item">
-          <img class="animated-image" src="https://png.pngtree.com/background/20231016/original/pngtree-3d-render-mockup-of-mobiles-and-social-applications-picture-image_5584590.jpg"
+          <img class="animated-image" src="https://s7d9.scene7.com/is/image/MandarinOriental/landmark-spa-the-oriental-spa-03?wid=1560&hei=820&fmt=jpeg&qlt=75,0&op_sharpen=0&resMode=sharp2&op_usm=0.8,0.8,4,0&iccEmbed=0&printRes=72&fit=crop&qlt=45,0"
             alt="Animated Image">
         </div>
       </div>
@@ -266,16 +49,16 @@ footer {
     
   
     
-    <section class="sec">
-      <div>
-        <h1>Our Servies In Dagopia Beauty and Spa</h1>
-        <h4>Dagopia Spa and Beauty Salon, built on the Weblium platform, is designed to showcase our services,
+    <section id="about">
+      <div class="sec" >
+        <p class="paro">Our Servies In Dagopia Beauty and Spa,You spread confidence and wellbeing in the world. We’re here to amplify your impact!</p>
+        <p>Dagopia Spa and Beauty Salon, built on the Weblium platform, is designed to showcase our services,
           pricing, about us, team, portfolio, testimonials, products, and contacts. We invite you to explore the
           specifics of doing business with an acclaimed agent in the beauty and personal care industry. Parallax
           scrolling, a pastel color scheme, and soft-hued images match the softness of the website's shapes and
-          textures.</h4>
+          textures.</p>
         <div>
-          <button class="button">Register</button>
+          <button class="button" id="registe">Register</button>
          
         </div>
       </div>
@@ -299,13 +82,32 @@ footer {
         
     </div>
 
-
+    <div class="sec1" id="contact">
+      <div class="grid-container">
+        <div class="grid-item" id="itemOne">
+          <h2>We Explore Your Inner Shining Beauty<span>Wellcome to Dagopia SPA</span></h2>
+          <p>Dagopia Spa and Beauty Salon, built on the Weblium platform, is designed to showcase our services,
+            pricing, about us, team, portfolio, testimonials, products, and contacts. We invite you to explore the
+            specifics of doing business with an acclaimed agent in the beauty and personal care industry. Parallax
+            scrolling, a pastel color scheme, and soft-hued images match the softness of the website's shapes and
+            textures.</p>
+            <div>
+              <button class="button">Get Started</button>
+              <button class="button2">Contact Us</button>
+            </div>
+        </div>
+        <div class="grid-item">
+          <img class="animated-image" src="https://s7d9.scene7.com/is/image/MandarinOriental/landmark-spa-the-oriental-spa-03?wid=1560&hei=820&fmt=jpeg&qlt=75,0&op_sharpen=0&resMode=sharp2&op_usm=0.8,0.8,4,0&iccEmbed=0&printRes=72&fit=crop&qlt=45,0"
+            alt="Animated Image">
+        </div>
+      </div>
+    </div>
    
   </div>
 
   <footer>
     <div class="footer-links">
-      <a href="#">Home</a>
+      <a href="Home.html">Home</a>
       <a href="#">About</a>
       <a href="#">Services</a>
       <a href="#">Contact</a>
@@ -321,6 +123,14 @@ footer {
 
     </div>
   </footer>
+  <script>
+    function toggleNav() {
+  var navList = document.querySelector('.nav');
+  navList.classList.toggle('show');
+      document.querySelector('.nav-toggle').classList.add('hidden');
+
+}
+  </script>
 </body>
 
 </html>
