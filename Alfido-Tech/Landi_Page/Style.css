@@ -128,24 +128,33 @@ background-size: cover;
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    
-    
-
-  }
+    width: 98%;
+    padding: 10px;
+   
+              }
 
   .grid-item {
-    border-radius: 10px;
+    margin: 10px;
+  border-radius: 10px;
     overflow: hidden;
-    grid-gap: 50px;
-    
+    grid-gap: 30px;
+       
   }
-
   .grid-item img {
-    
-    width: 100%;
-    height: 70%;
+        width: 70%;
+    height: 90%;
     object-fit: cover;
+  }
+  .textP{
+    padding-top: 15px;
+  }
+  .conBut{
+       padding-top: 25px;
+  }
+  .imageG{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
  .content{
     padding: 5px;
@@ -161,6 +170,8 @@ background-size: cover;
  background-color: #fff;
   display: flex;
   flex-direction: column;
+  
+  border: 1px solid green;
  }
   .spa{
     display: flex;
@@ -169,15 +180,7 @@ background-size: cover;
     margin-top: 30px;
     width: 100%;
   }
-#itemOne{
-  padding: 15px;
-font-size: 28px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
-}
+ 
   .animated-image {
 width: 98%;
 max-width: 98%;
@@ -458,7 +461,8 @@ align-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     margin: 0 auto;
-    width:90%;
+    width:95%;
+  
     
 
   }
@@ -468,6 +472,8 @@ align-items: center;
   .grid-three {
     border-radius: 10px;
     overflow: hidden;
+    
+
   }
   
  
