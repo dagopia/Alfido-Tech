@@ -237,7 +237,12 @@ footer {
     font-size: 20px;
   }
 
- 
+  .social-icon a {
+    color:#088155;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+  }
   .spaLOgo{
     font-size: 40px;
     color: #fff;
